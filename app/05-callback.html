@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="description" content="description unique par page" charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<style>
+		[class]{
+			background: #3612EF;
+			width: 100px;
+			height: 100px;
+			position: relative; /* pour l'animation */
+		}
+		.rouge{
+			background: #F71111;
+		}
+		.vert{
+		 	background: #0CD41F;
+		}
+		.violet{
+			background: #B808C3;
+		}
+		button:nth-child(9){position: relative;};
+
+	</style>
+</head>
+<body>
+	<div class="bleu"></div>
+	<div class="rouge"></div>
+	<div class="vert"></div>
+	<div class="violet"></div>
+
+	<!--focus() et blur() sur le formulaire coté js -->
+	<div>
+		<button>sans callback</button>	
+		<button>avec callback</button>
+		
+	</div>
+	<script src="js/production.js"></script>
+	<script src="js/05-callback.js"></script>
+</body>
+</html>
