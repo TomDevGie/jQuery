@@ -8,6 +8,3 @@ $(function(){
 		$('body > header nav').slideToggle(400);
 	});
 });
-$(function(){
-	
-	});
