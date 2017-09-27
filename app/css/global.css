@@ -573,12 +573,6 @@ h6 {
   .col-lg-12 {
     width: 100%; } }
 
-* {
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid black;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?uixjww");
@@ -852,43 +846,6 @@ body > header span {
   body > header span {
     display: none; } }
 
-.slider {
-  position: relative;
-  overflow: hidden; }
-  .slider ul {
-    padding: 0;
-    position: relative;
-    width: 9999px; }
-  .slider li {
-    list-style: none;
-    float: left;
-    width: 300px; }
-  .slider span {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    font-size: 3rem;
-    cursor: pointer;
-    z-index: 2;
-    opacity: .5; }
-    .slider span:hover {
-      transition: all .3s;
-      opacity: 1; }
-  .slider .icon-chevron-left {
-    left: 2%;
-    z-index: 2; }
-  .slider .icon-chevron-right {
-    right: 2%;
-    z-index: 2; }
-  .slider h1 {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    text-align: center;
-    width: 100%;
-    color: #212020;
-    z-index: 1; }
-
 .galerie [class*="col-xs-"] {
   padding-left: 0;
   padding-right: 0; }
@@ -957,3 +914,32 @@ body > header span {
 @media all and (min-width: 1200px) {
   .lightbox .cadre {
     width: 50%; } }
+
+.accordeon {
+  padding: 2rem 0; }
+  .accordeon h1 {
+    border-radius: 5px;
+    border: 1px solid #bbb8b8;
+    background: #edecec;
+    color: #212020;
+    padding: .6rem .8rem;
+    margin-bottom: 0;
+    font-size: 1.33333rem;
+    font-weight: lighter;
+    cursor: pointer; }
+    .accordeon h1 span {
+      display: inline-block;
+      width: 1rem; }
+  .accordeon p {
+    border: 1px solid #a19f9f;
+    padding: 1rem .6rem;
+    color: #212020;
+    margin-bottom: 0;
+    border-radius: 0 0 5px 5px;
+    display: none; }
+    .accordeon p:nth-of-type(1) {
+      display: block; }
+  .accordeon .active {
+    border-radius: 5px 5px 0 0;
+    color: #169A9F;
+    cursor: default; }
