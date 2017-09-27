@@ -573,6 +573,12 @@ h6 {
   .col-lg-12 {
     width: 100%; } }
 
+* {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?uixjww");
@@ -845,3 +851,40 @@ body > header span {
 	*/
   body > header span {
     display: none; } }
+
+.slider {
+  position: relative;
+  overflow: hidden; }
+  .slider ul {
+    padding: 0;
+    position: relative;
+    width: 9999px; }
+  .slider li {
+    list-style: none;
+    float: left;
+    width: 300px; }
+  .slider span {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 2;
+    opacity: .5; }
+    .slider span:hover {
+      transition: all .3s;
+      opacity: 1; }
+  .slider .icon-chevron-left {
+    left: 2%;
+    z-index: 2; }
+  .slider .icon-chevron-right {
+    right: 2%;
+    z-index: 2; }
+  .slider h1 {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 100%;
+    color: #212020;
+    z-index: 1; }
