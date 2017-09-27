@@ -573,6 +573,12 @@ h6 {
   .col-lg-12 {
     width: 100%; } }
 
+* {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?uixjww");
@@ -845,3 +851,109 @@ body > header span {
 	*/
   body > header span {
     display: none; } }
+
+.slider {
+  position: relative;
+  overflow: hidden; }
+  .slider ul {
+    padding: 0;
+    position: relative;
+    width: 9999px; }
+  .slider li {
+    list-style: none;
+    float: left;
+    width: 300px; }
+  .slider span {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 2;
+    opacity: .5; }
+    .slider span:hover {
+      transition: all .3s;
+      opacity: 1; }
+  .slider .icon-chevron-left {
+    left: 2%;
+    z-index: 2; }
+  .slider .icon-chevron-right {
+    right: 2%;
+    z-index: 2; }
+  .slider h1 {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 100%;
+    color: #212020;
+    z-index: 1; }
+
+.galerie [class*="col-xs-"] {
+  padding-left: 0;
+  padding-right: 0; }
+
+.galerie img {
+  transition: all .5s;
+  cursor: pointer; }
+  .galerie img:hover {
+    transform: scale(1.1, 1.1); }
+
+.galerie figure {
+  overflow: hidden; }
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%; }
+  .lightbox .cadre {
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .lightbox span {
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    cursor: pointer;
+    opacity: .5;
+    transition: all .5s; }
+    .lightbox span:hover {
+      opacity: 1; }
+  .lightbox .icon-close {
+    top: -15px;
+    right: -10px; }
+  .lightbox .icon-chevron-left {
+    top: 50%;
+    left: 1%;
+    transform: translate(0, -50%); }
+  .lightbox .icon-chevron-right {
+    top: 50%;
+    right: 1%;
+    transform: translate(0, -50%); }
+  .lightbox .puces {
+    padding: 1rem;
+    text-align: center; }
+  .lightbox i {
+    color: #fff;
+    margin: 0 .3rem;
+    font-size: 1.3rem;
+    cursor: pointer; }
+
+@media all and (min-width: 768px) {
+  .lightbox .cadre {
+    width: 80%; } }
+
+@media all and (min-width: 992px) {
+  .lightbox .cadre {
+    width: 60%; } }
+
+@media all and (min-width: 1200px) {
+  .lightbox .cadre {
+    width: 50%; } }
