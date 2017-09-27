@@ -846,6 +846,48 @@ body > header span {
   body > header span {
     display: none; } }
 
+<<<<<<< HEAD
+=======
+.slider {
+  position: relative;
+  overflow: hidden; }
+  .slider ul {
+    padding: 0;
+    position: relative;
+    width: 9999px; }
+  .slider li {
+    list-style: none;
+    float: left;
+    width: 300px; }
+  .slider span {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 2;
+    opacity: .5; }
+    .slider span:hover {
+      transition: all .3s;
+      opacity: 1; }
+  .slider .icon-chevron-left {
+    left: 2%;
+    z-index: 2; }
+  .slider .icon-chevron-right {
+    right: 2%;
+    z-index: 2; }
+  .slider h1 {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 100%;
+    color: #212020;
+    z-index: 1; }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 12
 .galerie [class*="col-xs-"] {
   padding-left: 0;
   padding-right: 0; }
@@ -914,6 +956,7 @@ body > header span {
 @media all and (min-width: 1200px) {
   .lightbox .cadre {
     width: 50%; } }
+<<<<<<< HEAD
 
 .accordeon {
   padding: 2rem 0; }
@@ -943,3 +986,6 @@ body > header span {
     border-radius: 5px 5px 0 0;
     color: #169A9F;
     cursor: default; }
+=======
+>>>>>>> release/12
+>>>>>>> 12
