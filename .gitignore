@@ -1,3 +1,4 @@
 node_modules/
+#fichier non commit
 app/css/global.css
 app/js/production.js
